@@ -1,10 +1,10 @@
 import java.util.regex.Pattern;
 
 public class UserValidater {
-    private static final String EMAIL_PATTERN = "^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$";
+    private static final String PHONE_PATTERN = "^[0-9]{2}[0-9]{10}";
 
-    public boolean validateEmail(String email) {
-        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-        return pattern.matcher(email).matches();
+    public boolean validatePhone(String phone) {
+        Pattern pattern = Pattern.compile(PHONE_PATTERN);
+        return pattern.matcher(phone).matches();
     }
 }
